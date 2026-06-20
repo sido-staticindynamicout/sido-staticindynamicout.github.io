@@ -440,15 +440,15 @@
     <div class="columns is-centered has-text-centered">
       <div class="column is-full">
         <h2 class="title is-3">Extending to varying speed</h2>
-        <div class="varyspeed-row">
-          <figure class="varyspeed-item">
-            <img src="static/images/predictor.png" alt="Object-pose predictor forecasts on Gantry random: FERNN lands closest to the ground-truth future pose" loading="lazy"/>
-            <figcaption>predictor forecasts (FERNN closest to ground truth)</figcaption>
-          </figure>
-          <figure class="varyspeed-item">
-            <video controls muted loop playsinline preload="metadata"><source src="videos/real-rollouts/random_dynamic_changing_speed.mp4" type="video/mp4"></video>
-            <figcaption>rollout under changing speed</figcaption>
-          </figure>
+        <div class="columns is-centered is-vcentered">
+          <div class="column is-one-third">
+            <img class="fig" src="static/images/predictor.png" alt="Object-pose predictor forecasts on Gantry random: FERNN lands closest to the ground-truth future pose" loading="lazy"/>
+            <p class="fig-caption">predictor forecasts (FERNN closest to ground truth)</p>
+          </div>
+          <div class="column is-two-thirds">
+            <video class="vary-video" controls muted loop playsinline preload="metadata"><source src="videos/real-rollouts/random_dynamic_changing_speed.mp4" type="video/mp4"></video>
+            <p class="fig-caption">rollout under changing speed</p>
+          </div>
         </div>
         <div class="columns is-centered" style="margin-top:1rem;">
           <div class="column is-four-fifths">

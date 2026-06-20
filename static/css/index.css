@@ -208,37 +208,14 @@ body {
   text-align: center;
 }
 
-/* Varying-speed section: figure and video pinned to equal height */
-.varyspeed-row {
-  display: flex;
-  gap: 1.5rem;
-  align-items: flex-start;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-.varyspeed-item { margin: 0; }
-.varyspeed-item img,
-.varyspeed-item video {
-  height: 320px;
-  width: auto;
-  max-width: 100%;
+/* Varying-speed section: video matched to the figure column height */
+.vary-video {
+  width: 100%;
+  height: auto;
   display: block;
-  border-radius: 10px;
-}
-.varyspeed-item video {
   border: 1px solid #bbb;
+  border-radius: 10px;
   background: #000;
-}
-.varyspeed-item figcaption {
-  font-family: 'Noto Sans', sans-serif;
-  font-size: 0.95rem;
-  color: #4a4a4a;
-  margin-top: 0.5rem;
-  text-align: center;
-}
-@media screen and (max-width: 768px) {
-  .varyspeed-item img,
-  .varyspeed-item video { height: auto; width: 100%; }
 }
 
 /* Figures */
